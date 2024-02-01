@@ -1,6 +1,6 @@
 # olympics-sql-analytics
 
-Analyzing olympics dataset on SQL server sql queries
+Analyzing olympics dataset on MS SQL Server
 
 ## Problem
 In this project, I have answered 15 questions related to Olympics data.
