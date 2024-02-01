@@ -39,7 +39,7 @@ select a.name
 from athletes a 
 inner join athlete_events ae 
 on a.id = ae.athlete_id
-where medal = 'Gold'
+where medal = 'Gold';
 
 --7 Find the most popular sport in terms of the number of athletes who participated.
 select sport, count(distinct athlete_id) as total_athlete_per_sport
@@ -70,10 +70,6 @@ where medal is NOT NULL
 group by a.athlete_id, a.name
 order by total_medals DESC
 LIMIT 1;
-
-
--- athletes - id	name	sex	height	weight	team
--- athlete_events - athlete_id	games	year	season	city	sport	event	medal
 
 --11. Which team has won the maximum gold medals over the years.
 select a.team, count(ae.medal) as gold_medals_won
